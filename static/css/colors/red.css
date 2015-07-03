@@ -1,0 +1,17 @@
+.color,input[type='submit'],.skill-bar>pre,.ps-container .ps-scrollbar-y{
+    background-color: #EC0329;
+}
+.color-text,.title,.level,h1{
+    color: #EC0329 !important;
+}
+#page-cover>.socials>div:hover,div.submit:hover{
+    background-color: #A3021C !important;
+    
+    -webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear; 
+    -o-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+}
+.inputerror{
+    border-color: #EC0329 !important;
+}

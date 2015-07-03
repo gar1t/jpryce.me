@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{personal.name}}</title>
+
+    <!-- Metatags -->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+
+    <!-- Google Font : Lato -->
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900,400italic' rel='stylesheet' type='text/css'>
+
+    <!-- Modernizr Script -->
+    <script src="js/modernizr.custom.js"></script>
+
+    <!-- General Stylesheet -->
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <!-- Flip Plugin Stylesheet -->
+    <link rel="stylesheet" type="text/css" href="css/bookblock.min.css" />
+    <!-- Color Scheme Stylesheet -->
+    <link rel="stylesheet" type="text/css" href="css/colors/wine2.css"/>
+    <!-- Cover Icon and Font Colors Stylesheet -->
+    <link rel="stylesheet" type="text/css" href="css/coverfontcolor/white.css"/>
+    <!-- Custom Scrollbar Stylesheet -->
+    <link rel="stylesheet" type="text/css" href="css/perfect-scrollbar.min.css"/>
+    <!-- Portfolio Hover Stylesheet -->
+    <link rel="stylesheet" type="text/css" href="css/direction-aware-hover-effect.min.css" />
+    <!-- Lightbox Stylesheet -->
+    <link rel="stylesheet" type="text/css" href="css/jquery.lightbox.min.css" />
+  </head>
+  <body>
+    <div class="workspace">
+      <div class="menu color">
+        <div>
+          <ul>
+            <li><div class="menu-item-block color" id="home"><div class="menu-item color"></div><p>Home</p></div></li>
+            <li><div class="menu-item-block color" id="profile"><div class="menu-item color"></div><p>Profile</p></div></li>
+            <li><div class="menu-item-block color" id="resume"><div class="menu-item color"></div><p>Resume</p></div></li>
+            <li><div class="menu-item-block color" id="portfolio"><div class="menu-item color"></div><p>Portfolio</p></div></li>
+            <li><div class="menu-item-block color" id="contact"><div class="menu-item color"></div><p>Contact</p></div></li>
+          </ul>
+        </div>
+      </div>
+      <div class="content">
+        <div id="bb-bookblock" class="bb-bookblock">
+          <div class="bb-item">
+            <div id="page-cover">
+              <div class="socials">
+                {% include "socials.html" with item_class="color" %}
+              </div>
+              <div class="info color-text">
+                <p class="name">{{personal.name}}</p>
+                <p class="ocupation">{{personal.title}}</p>
+              </div>
+            </div>
+          </div>
+          <div class="bb-item">
+            <div class="bb-custom-side coverside">
+              <div id="profile-cover">
+                <div class="info color-text">
+                  <p class="name">{{personal.name}}</p>
+                  <p class="ocupation">{{personal.title}}</p>
+                </div>
+              </div>
+            </div>
+            <div class="bb-custom-side pagearea profile">
+              <div class="top color-text">
+                <p>Profile</p>
+                <div class="socials">
+                  {% include "socials.html" %}
+                </div>
+              </div>
+              <div class="bottom">
+                <img src="images/profile_image.jpg" alt="Profile" class="profileImage"/>
+                <p>{{personal.blurb|markdown_to_html}}<p>
+                <table>
+                  <tr>
+                    <td class="title">Name</td>
+                    <td>{{personal.name}}</td>
+                  </tr>
+                  <tr>
+                    <td class="title">Age</td>
+                    <td>{{personal.age}}</td>
+                  </tr>
+                  <tr>
+                    <td class="title">Address</td>
+                    <td>{{personal.address}}</td>
+                  </tr>
+                  <tr>
+                    <td class="title">Country</td>
+                    <td>{{personal.country}}</td>
+                  </tr>
+                  <tr>
+                    <td class="title">Email</td>
+                    <td><a href="mailto:{{personal.email}}">{{personal.email}}</a></td>
+                  </tr>
+                  <tr>
+                    <td class="title">Phone</td>
+                    <td>{{personal.phone}}</td>
+                  </tr>
+                  <tr>
+                    <td class="title">Website</td>
+                    <td><a href="http://{{personal.website}}">{{personal.website}}</a></td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+          <div class="bb-item">
+            <div class="bb-custom-side coverside">
+              <div id="resume-cover">
+                <div class="info color-text">
+                  <p class="name">{{personal.name}}</p>
+                  <p class="ocupation">{{personal.title}}</p>
+                </div>
+              </div>
+            </div>
+            <div class="bb-custom-side pagearea resume">
+              <div class="top color-text">
+                <p>Resume</p>
+                <div class="socials">
+                  {% include "socials.html" %}
+                </div>
+              </div>
+              <div class="bottom">
+                <ul>
+                  <li>
+                    <h3>Education</h3>
+                    <div>{{education|resume_ul}}</div>
+                  </li>
+                  <li>
+                    <h3>Employment</h3>
+                    <div>{{employment|resume_ul}}</div>
+                  </li>
+                  <li>
+                    <h3>Skills</h3>
+                    <div>{{skills|skills_table}}</div>
+                    <!--
+                      <table>
+                        <tr>
+                          <td class="skill">Graphic Design</td>
+                          <td class="level">85%</td>
+                          <td class="skill-bar">
+                            <pre data-skill="85">&nbsp;</pre>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="skill">Web Design</td>
+                          <td class="level">60%</td>
+                          <td class="skill-bar">
+                            <pre data-skill="60">&nbsp;</pre>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="skill">Print Design</td>
+                          <td class="level">50%</td>
+                          <td class="skill-bar">
+                            <pre data-skill="50">&nbsp;</pre>
+                          </td>
+                        </tr>
+                      </table>
+                    </div>
+                    -->
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="bb-item">
+            <div class="bb-custom-side coverside">
+              <div id="portfolio-cover">
+                <div class="info color-text">
+                  <p class="name">{{personal.name}}</p>
+                  <p class="ocupation">{{personal.title}}</p>
+                </div>
+              </div>
+            </div>
+            <div class="bb-custom-side pagearea portfolio">
+              <div class="top color-text">
+                <p>Portfolio</p>
+                <div class="socials">
+                  {% include "socials.html" %}
+                </div>
+              </div>
+              <div class="bottom">
+                <ul class="filters">
+                  <li class="all active">All</li>
+                  <li class="graphic">Graphic</li>
+                  <li class="webdesign">Web Design</li>
+                  <li class="video">Video</li>
+                  <li class="art">Art</li>
+                </ul>
+                <ul class="gallery da-thumbs" id="da-thumbs">
+                  <!-- Vimeo Video -->
+                  <li class="all video">
+                    <a href="//player.vimeo.com/video/50467187?color=ff3300" data-video="[560 315]" data-autoplay="1" >
+                      <img src="images/gallery/thumb1.jpg" alt="Video from Vimeo"/>
+                      <div><span>Vimeo Video</span></div>
+                    </a>
+                  </li>
+                  <!-- Youtube Video -->
+                  <li class="all video">
+                    <a href="//www.youtube.com/embed/YE7VzlLtp-4" data-video="[560 315]" data-autoplay="1" >
+                      <img src="images/gallery/thumb1.jpg" alt="Video from Youtube"/>
+                      <div><span>Youtube Video</span></div>
+                    </a>
+                  </li>
+                  <li class="all graphic">
+                    <a href="images/gallery/gallery1.jpg">
+                      <img src="images/gallery/thumb1.jpg" alt="Image 1"/>
+                      <div><span>Gallery Item</span></div>
+                    </a>
+                  </li>
+                  <li class="all webdesign">
+                    <a href="images/gallery/gallery2.jpg">
+                      <img src="images/gallery/thumb2.jpg" alt="Image 2"/>
+                      <div><span>Gallery Item</span></div>
+                    </a>
+                  </li>
+                  <li class="all art">
+                    <a href="images/gallery/gallery3.jpg">
+                      <img src="images/gallery/thumb3.jpg" alt="Image 3"/>
+                      <div><span>Gallery Item</span></div>
+                    </a>
+                  </li>
+                  <li class="all graphic">
+                    <a href="images/gallery/gallery4.jpg">
+                      <img src="images/gallery/thumb4.jpg" alt="Image 4"/>
+                      <div><span>Gallery Item</span></div>
+                    </a>
+                  </li>
+                  <li class="all art">
+                    <a href="images/gallery/gallery5.jpg">
+                      <img src="images/gallery/thumb5.jpg" alt="Image 5"/>
+                      <div><span>Gallery Item</span></div>
+                    </a>
+                  </li>
+                  <li class="all webdesign">
+                    <a href="images/gallery/gallery6.jpg">
+                      <img src="images/gallery/thumb6.jpg" alt="Image 6"/>
+                      <div><span>Gallery Item</span></div>
+                    </a>
+                  </li>
+                  <li class="all art">
+                    <a href="images/gallery/gallery7.jpg">
+                      <img src="images/gallery/thumb7.jpg" alt="Image 7"/>
+                      <div><span>Gallery Item</span></div>
+                    </a>
+                  </li>
+                  <li class="all graphic">
+                    <a href="images/gallery/gallery8.jpg">
+                      <img src="images/gallery/thumb8.jpg" alt="Image 8"/>
+                      <div><span>Gallery Item</span></div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="bb-item">
+            <div class="bb-custom-side coverside">
+              <div id="contact-cover">
+                <div class="info color-text">
+                  <p class="name">{{personal.name}}</p>
+                  <p class="ocupation">{{personal.title}}</p>
+                </div>
+              </div>
+            </div>
+            <div class="bb-custom-side pagearea contact">
+              <div class="top color-text">
+                <p>Contact</p>
+                <div class="socials">
+                  {% include "socials.html" %}
+                </div>
+              </div>
+              <div class="bottom">
+                <p>
+                  <strong>Address: </strong>{{personal.address}}<br>
+                  <strong>Phone: </strong>{{personal.phone}}<br>
+                  <strong>Email: </strong>{{personal.email}}<br>
+                  <strong>Site: </strong>{{personal.website}}<br>
+                </p>
+                <p class="title">Get In Touch!</p>
+                <form id="contactform" method="post">
+                  <table>
+                    <tr>
+                      <td colspan="2"><input type="text" name="name" placeholder="Name" class="color-text"/></td>
+                    </tr>
+                    <tr>
+                      <td colspan="2"><input type="text" name="email" placeholder="Email" class="color-text"/></td>
+                    </tr>
+                    <tr>
+                      <td colspan="2"><input type="text" name="subject" placeholder="Subject" class="color-text"/></td>
+                    </tr>
+                    <tr>
+                      <td colspan="2">
+                        <textarea placeholder="Message" name="message" class="color-text"></textarea>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td id="mailerror" class="color-text"></td>
+                      <td class="right">
+                        <div class="submit color" id="contactsubmit">Send</div>
+                      </td>
+                    </tr>
+                  </table>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquerypp.custom.min.js"></script>
+    <script type="text/javascript" src="js/jquery.bookblock.min.js"></script>
+    <script type="text/javascript" src="js/jquery.mousewheel.min.js"></script>
+    <script type="text/javascript" src="js/perfect-scrollbar.min.js"></script>
+    <script type="text/javascript" src="js/jquery.placeholder.min.js"></script>
+    <script type="text/javascript" src="js/jquery.hoverdir.min.js"></script>
+    <script type="text/javascript" src="js/jquery.lightbox.min.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
+
+    <script>
+      $(document).ready(function() {
+        $('a').click(function(e) {
+          var href = $(e.target).attr('href');
+          if (href.startsWith('#')) {
+            var page = pageNumber(href.substring(1));
+            if (page != null) {
+              jump(page);
+              e.preventDefault();
+            }
+          }
+        });
+      });
+
+      function locationHash() {
+        return window.location.hash.substring(1);
+      }
+
+      function pageNumber(name) {
+        if (name == 'profile') {
+          return 2;
+        } else if (name == 'resume') {
+          return 3;
+        } else if (name == 'portfolio') {
+          return 4;
+        } else if (name == 'contact') {
+          return 5;
+        } else {
+          return null;
+        }
+      }
+
+      function jump(page) {
+        $('#bb-bookblock').bookblock('jump', page);
+      }
+
+      jump(pageNumber(locationHash()));
+
+    </script>
+  </body>
+</html>

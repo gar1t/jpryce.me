@@ -1,0 +1,9 @@
+.menu-item{
+    background-image: url('../../images/menu_sprite_white.png');
+}
+#page-cover>div.socials>div>a>div.icon{
+    background: url('../../images/social_sprite_white.png') no-repeat;
+}
+.menu-item-block>p{
+    color: #FFFFFF;
+}
