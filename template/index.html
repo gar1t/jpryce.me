@@ -38,8 +38,8 @@
           <ul>
             <li><div class="menu-item-block color" id="home"><div class="menu-item color"></div><p>Home</p></div></li>
             <li><div class="menu-item-block color" id="profile"><div class="menu-item color"></div><p>Profile</p></div></li>
-            <li><div class="menu-item-block color" id="resume"><div class="menu-item color"></div><p>Resume</p></div></li>
             <li><div class="menu-item-block color" id="portfolio"><div class="menu-item color"></div><p>Portfolio</p></div></li>
+            <li><div class="menu-item-block color" id="resume"><div class="menu-item color"></div><p>Resume</p></div></li>
             <li><div class="menu-item-block color" id="contact"><div class="menu-item color"></div><p>Contact</p></div></li>
           </ul>
         </div>
@@ -93,12 +93,12 @@
                     <td>{{personal.country}}</td>
                   </tr>
                   <tr>
-                    <td class="title">Email</td>
-                    <td><a href="mailto:{{personal.email}}">{{personal.email}}</a></td>
-                  </tr>
-                  <tr>
                     <td class="title">Phone</td>
                     <td>{{personal.phone}}</td>
+                  </tr>
+                  <tr>
+                    <td class="title">Email</td>
+                    <td><a href="mailto:{{personal.email}}">{{personal.email}}</a></td>
                   </tr>
                   <tr>
                     <td class="title">Website</td>
@@ -109,6 +109,38 @@
             </div>
           </div>
           <div class="bb-item">
+            <div class="bb-custom-side coverside">
+              <div id="portfolio-cover">
+                <div class="info color-text">
+                  <p class="name">{{personal.name}}</p>
+                  <p class="ocupation">{{personal.title}}</p>
+                </div>
+              </div>
+            </div>
+            <div class="bb-custom-side pagearea portfolio">
+              <div class="top color-text">
+                <p>Portfolio</p>
+                <div class="socials">
+                  {% include "socials.html" %}
+                </div>
+              </div>
+              <div class="bottom">
+                <ul class="gallery da-thumbs" id="da-thumbs">
+                  {% for item in portfolio %}
+                  <li class="{{item.tags}}">
+                    {% if item.type == "youtube" %}
+                    <a href="//www.youtube.com/embed/{{item.embed_id}}" data-video="[560 315]" data-autoplay="1" >
+                      <img src="images/gallery/{{item.thumbnail}}" alt="{{item.tite}}"/>
+                      <div><span>{{item.title}}</span></div>
+                    </a>
+                    {% endif %}
+                  </li>
+                  {% endfor %}
+                </ul>
+              </div>
+            </div>
+          </div>
+         <div class="bb-item">
             <div class="bb-custom-side coverside">
               <div id="resume-cover">
                 <div class="info color-text">
@@ -170,97 +202,6 @@
           </div>
           <div class="bb-item">
             <div class="bb-custom-side coverside">
-              <div id="portfolio-cover">
-                <div class="info color-text">
-                  <p class="name">{{personal.name}}</p>
-                  <p class="ocupation">{{personal.title}}</p>
-                </div>
-              </div>
-            </div>
-            <div class="bb-custom-side pagearea portfolio">
-              <div class="top color-text">
-                <p>Portfolio</p>
-                <div class="socials">
-                  {% include "socials.html" %}
-                </div>
-              </div>
-              <div class="bottom">
-                <ul class="filters">
-                  <li class="all active">All</li>
-                  <li class="graphic">Graphic</li>
-                  <li class="webdesign">Web Design</li>
-                  <li class="video">Video</li>
-                  <li class="art">Art</li>
-                </ul>
-                <ul class="gallery da-thumbs" id="da-thumbs">
-                  <!-- Vimeo Video -->
-                  <li class="all video">
-                    <a href="//player.vimeo.com/video/50467187?color=ff3300" data-video="[560 315]" data-autoplay="1" >
-                      <img src="images/gallery/thumb1.jpg" alt="Video from Vimeo"/>
-                      <div><span>Vimeo Video</span></div>
-                    </a>
-                  </li>
-                  <!-- Youtube Video -->
-                  <li class="all video">
-                    <a href="//www.youtube.com/embed/YE7VzlLtp-4" data-video="[560 315]" data-autoplay="1" >
-                      <img src="images/gallery/thumb1.jpg" alt="Video from Youtube"/>
-                      <div><span>Youtube Video</span></div>
-                    </a>
-                  </li>
-                  <li class="all graphic">
-                    <a href="images/gallery/gallery1.jpg">
-                      <img src="images/gallery/thumb1.jpg" alt="Image 1"/>
-                      <div><span>Gallery Item</span></div>
-                    </a>
-                  </li>
-                  <li class="all webdesign">
-                    <a href="images/gallery/gallery2.jpg">
-                      <img src="images/gallery/thumb2.jpg" alt="Image 2"/>
-                      <div><span>Gallery Item</span></div>
-                    </a>
-                  </li>
-                  <li class="all art">
-                    <a href="images/gallery/gallery3.jpg">
-                      <img src="images/gallery/thumb3.jpg" alt="Image 3"/>
-                      <div><span>Gallery Item</span></div>
-                    </a>
-                  </li>
-                  <li class="all graphic">
-                    <a href="images/gallery/gallery4.jpg">
-                      <img src="images/gallery/thumb4.jpg" alt="Image 4"/>
-                      <div><span>Gallery Item</span></div>
-                    </a>
-                  </li>
-                  <li class="all art">
-                    <a href="images/gallery/gallery5.jpg">
-                      <img src="images/gallery/thumb5.jpg" alt="Image 5"/>
-                      <div><span>Gallery Item</span></div>
-                    </a>
-                  </li>
-                  <li class="all webdesign">
-                    <a href="images/gallery/gallery6.jpg">
-                      <img src="images/gallery/thumb6.jpg" alt="Image 6"/>
-                      <div><span>Gallery Item</span></div>
-                    </a>
-                  </li>
-                  <li class="all art">
-                    <a href="images/gallery/gallery7.jpg">
-                      <img src="images/gallery/thumb7.jpg" alt="Image 7"/>
-                      <div><span>Gallery Item</span></div>
-                    </a>
-                  </li>
-                  <li class="all graphic">
-                    <a href="images/gallery/gallery8.jpg">
-                      <img src="images/gallery/thumb8.jpg" alt="Image 8"/>
-                      <div><span>Gallery Item</span></div>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="bb-item">
-            <div class="bb-custom-side coverside">
               <div id="contact-cover">
                 <div class="info color-text">
                   <p class="name">{{personal.name}}</p>
@@ -279,10 +220,11 @@
                 <p>
                   <strong>Address: </strong>{{personal.address}}<br>
                   <strong>Phone: </strong>{{personal.phone}}<br>
-                  <strong>Email: </strong>{{personal.email}}<br>
-                  <strong>Site: </strong>{{personal.website}}<br>
+                  <strong>Email: </strong><a href="mailto:{{personal.email}}">{{personal.email}}</a><br>
+                  <strong>Site: </strong><a href="http://{{personal.website}}">{{personal.website}}</a><br>
                 </p>
-                <p class="title">Get In Touch!</p>
+                <p class="title">Call me!</p>
+                <!--
                 <form id="contactform" method="post">
                   <table>
                     <tr>
@@ -307,6 +249,7 @@
                     </tr>
                   </table>
                 </form>
+                -->
               </div>
             </div>
           </div>
@@ -344,9 +287,9 @@
       function pageNumber(name) {
         if (name == 'profile') {
           return 2;
-        } else if (name == 'resume') {
-          return 3;
         } else if (name == 'portfolio') {
+          return 3;
+        } else if (name == 'resume') {
           return 4;
         } else if (name == 'contact') {
           return 5;

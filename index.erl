@@ -6,7 +6,38 @@ data(_) ->
       about => "about.md",
       education => "education.md",
       employment => "employment.md",
-      skills => "skills.md"
+      skills => "skills.md",
+      portfolio =>
+          [
+           #{
+              title => "LA Marathon 2014 I",
+              type => "youtube",
+              embed_id => "oh1RqJ5W1Qo",
+              thumbnail => "thumb-compassion.jpg",
+              tags => "all video"
+            },
+           #{
+              title => "LA Marathon 2014 II",
+              type => "youtube",
+              embed_id => "kiYfzz9lpLo",
+              thumbnail => "thumb-addicted.jpg",
+              tags => "all video"
+            },
+           #{
+              title => "LA Marathon 2014 III",
+              type => "youtube",
+              embed_id => "MJ3MuW5extI",
+              thumbnail => "thumb-determination.jpg",
+              tags => "all video"
+            },
+           #{
+              title => "Evolution",
+              type => "youtube",
+              embed_id => "K7owaOR3h_Y",
+              thumbnail => "thumb-evolution.jpg",
+              tags => "all video"
+            }
+          ]
      }.
 
 site(_) ->
