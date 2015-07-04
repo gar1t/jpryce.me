@@ -37,6 +37,14 @@ data(_) ->
               thumbnail => "thumb-evolution.jpg",
               tags => "all video"
             }
+          ],
+      skills =>
+          [
+           #{name => "Final Cut Pro",   level => 70},
+           #{name => "After Effects",   level => 50},
+           #{name => "Photoshop",       level => 40},
+           #{name => "Premiere",        level => 25},
+           #{name => "Davinci Resolve", level => 55}
           ]
      }.
 
@@ -57,19 +65,3 @@ split_items(HTML) ->
 
 resume_li(HTML) ->
     io_lib:format("<li>~s</li>", [HTML]).
-
-skills_table(Markdown) ->
-    ["<table>", [skill_tr(Skill) || Skill <- skills(Markdown)], "</table>"].
-
-skills(Meta) ->
-    lists:reverse([{Name, Val} || {Name, Val} <- Meta, Name /= '__file__']).
-
-skill_tr({Name, Percent}) ->
-    io_lib:format(
-      "<tr>"
-      "  <td class=\"skill\">~s</td>"
-      "  <td class=\"level\">~s%</td>"
-      "  <td class=\"skill-bar\">"
-      "    <pre data-skill=\"~s\">&nbsp;</pre>"
-      "  </td>"
-      "</tr>", [Name, Percent, Percent]).

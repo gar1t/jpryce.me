@@ -159,42 +159,28 @@
               <div class="bottom">
                 <ul>
                   <li>
+                    <h3>Work</h3>
+                    <div>{{employment|resume_ul}}</div>
+                  </li>
+                  <li>
                     <h3>Education</h3>
                     <div>{{education|resume_ul}}</div>
                   </li>
                   <li>
-                    <h3>Employment</h3>
-                    <div>{{employment|resume_ul}}</div>
-                  </li>
-                  <li>
                     <h3>Skills</h3>
-                    <div>{{skills|skills_table}}</div>
-                    <!--
+                    <div>
                       <table>
+                        {% for skill in skills %}
                         <tr>
-                          <td class="skill">Graphic Design</td>
-                          <td class="level">85%</td>
+                          <td class="skill">{{skill.name}}</td>
+                          <td class="level">{{skill.level}}%</td>
                           <td class="skill-bar">
-                            <pre data-skill="85">&nbsp;</pre>
+                            <pre data-skill="{{skill.level}}">&nbsp;</pre>
                           </td>
                         </tr>
-                        <tr>
-                          <td class="skill">Web Design</td>
-                          <td class="level">60%</td>
-                          <td class="skill-bar">
-                            <pre data-skill="60">&nbsp;</pre>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td class="skill">Print Design</td>
-                          <td class="level">50%</td>
-                          <td class="skill-bar">
-                            <pre data-skill="50">&nbsp;</pre>
-                          </td>
-                        </tr>
+                        {% endfor %}
                       </table>
                     </div>
-                    -->
                   </li>
                 </ul>
               </div>
@@ -224,32 +210,6 @@
                   <strong>Site: </strong><a href="http://{{personal.website}}">{{personal.website}}</a><br>
                 </p>
                 <p class="title">Call me!</p>
-                <!--
-                <form id="contactform" method="post">
-                  <table>
-                    <tr>
-                      <td colspan="2"><input type="text" name="name" placeholder="Name" class="color-text"/></td>
-                    </tr>
-                    <tr>
-                      <td colspan="2"><input type="text" name="email" placeholder="Email" class="color-text"/></td>
-                    </tr>
-                    <tr>
-                      <td colspan="2"><input type="text" name="subject" placeholder="Subject" class="color-text"/></td>
-                    </tr>
-                    <tr>
-                      <td colspan="2">
-                        <textarea placeholder="Message" name="message" class="color-text"></textarea>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td id="mailerror" class="color-text"></td>
-                      <td class="right">
-                        <div class="submit color" id="contactsubmit">Send</div>
-                      </td>
-                    </tr>
-                  </table>
-                </form>
-                -->
               </div>
             </div>
           </div>

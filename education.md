@@ -1,17 +1,21 @@
-# Graphic Design
+# Bachelor of Arts, Film
 
-## School of the Arts (2002 - 2006)
+## Columbia College - Chicago, IL (2002 - 2006)
 
-Lorem ipsum dolor sit amet, consectetur adipiscingVivamus sit amet
-ligula non lectus cursus egestas. Cras erat lorem, fringilla quis
-sagittis in, sagittis inNam leo tortor Nam leo tortor Vivamus.
+Emphasis on cinematography and directing.
 
 ---
 
-# Graphic Design
+# Associate Degree
 
-## School of the Arts (2002 - 2006)
+## College of DuPage - Glen Ellyn, IL (2000 - 2002)
 
-Lorem ipsum dolor sit amet, consectetur adipiscingVivamus sit amet
-ligula non lectus cursus egestas. Cras erat lorem, fringilla quis
-sagittis in, sagittis inNam leo tortor Nam leo tortor Vivamus.
+Studied stage acting, improvisation and writing.
+
+---
+
+# Additional Education
+
+## Westmont College -  Santa Barbera, CA (1995 - 1996)
+
+Studied international business.

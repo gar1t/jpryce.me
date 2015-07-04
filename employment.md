@@ -1,27 +1,105 @@
-# Graphic Design
+# Creative Director
 
-## Microsoft (2002 - 2006)
+## Creative Matters Agency (2013 - 2015)
 
-Lorem ipsum dolor sit amet, consectetur adipiscingVivamus sit amet
-ligula non lectus cursus egestas. Cras erat lorem, fringilla quis
-sagittis in, sagittis inNam leo tortor Nam leo tortor Vivamus.
-
----
-
-# Graphic Design
-
-## Konami (2002 - 2006)
-
-Lorem ipsum dolor sit amet, consectetur adipiscingVivamus sit amet
-ligula non lectus cursus egestas. Cras erat lorem, fringilla quis
-sagittis in, sagittis inNam leo tortor Nam leo tortor Vivamus.
+Responsibilities included strategic and operational management of
+activities related to the conception, development and production of
+video media. Researched and designed workflows, mentored and trained
+interns, managed equipment and made purchase recommendations based on
+immediate and long-term needs.
 
 ---
 
-# Graphic Design
+# Swing
 
-## Namco (2002 - 2006)
+## Civilianaire Boys’ Club (20xx - 20xx)
 
-Lorem ipsum dolor sit amet, consectetur adipiscingVivamus sit amet
-ligula non lectus cursus egestas. Cras erat lorem, fringilla quis
-sagittis in, sagittis inNam leo tortor Nam leo tortor Vivamus.
+DP: Quyen Tran
+
+---
+
+# Key Grip
+
+## Such Good People – Feature Film  (20xx - 20xx)
+
+DP: Pierluigi Malavasi
+
+---
+
+# Grip
+
+## The Signing – Short Film (20xx - 20xx)
+
+DP: Brian Wells
+
+---
+
+# Grip
+
+## When Sara Looks Up – Short Film (20xx - 20xx)
+
+DP: Daniel Tkaczyk
+
+---
+
+# Grip
+
+## Fox Sports Saturday Baseball – MLB Productions (20xx - 20xx)
+
+Gaffer: Tom Scott
+
+---
+
+# Dolly Grip
+
+## Magnum Insurance – Commercial (20xx - 20xx)
+
+DP: Peter Gilbert
+
+---
+
+# Grip
+
+## Mandy – Short Film (20xx - 20xx)
+
+DP: Fred Miller
+
+---
+
+# Grip
+
+## City Doctor – Short Film (20xx - 20xx)
+
+DP: Brian Wells
+
+---
+
+# Production Assistant/Grip (20xx - 20xx)
+
+## Nike – Commercial
+
+Director: Michael Thelin
+
+---
+
+# Production Assistant
+
+## Threads (Khahit errough) – Feature Film (20xx - 20xx)
+
+Producer: Don Smith
+
+---
+
+# Production Assistant
+
+## Boricua – Feature Film (20xx - 20xx)
+
+Producer: Sam Sanders
+
+---
+
+# Boom Operator
+
+## The Appointment – Short Film (20xx - 20xx)
+
+Producer/Director: Jose Gomez
