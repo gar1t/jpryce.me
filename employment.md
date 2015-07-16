@@ -10,35 +10,19 @@ immediate and long-term needs.
 
 ---
 
-# Swing
-
-## Civilianaire Boys’ Club (20xx - 20xx)
-
-DP: Quyen Tran
-
----
-
 # Key Grip
 
-## Such Good People – Feature Film  (20xx - 20xx)
+## Such Good People – Feature Film  (2013)
 
 DP: Pierluigi Malavasi
 
 ---
 
-# Grip
+# Swing
 
-## The Signing – Short Film (20xx - 20xx)
+## Civilianaire Boys’ Club (2012)
 
-DP: Brian Wells
-
----
-
-# Grip
-
-## When Sara Looks Up – Short Film (20xx - 20xx)
-
-DP: Daniel Tkaczyk
+DP: Quyen Tran
 
 ---
 
@@ -50,31 +34,23 @@ Gaffer: Tom Scott
 
 ---
 
-# Dolly Grip
-
-## Magnum Insurance – Commercial (20xx - 20xx)
-
-DP: Peter Gilbert
-
----
-
 # Grip
 
-## Mandy – Short Film (20xx - 20xx)
-
-DP: Fred Miller
-
----
-
-# Grip
-
-## City Doctor – Short Film (20xx - 20xx)
+## City Doctor – Short Film (2007)
 
 DP: Brian Wells
 
 ---
 
-# Production Assistant/Grip (20xx - 20xx)
+# Grip
+
+## Mandy – Short Film (2006)
+
+DP: Fred Miller
+
+---
+
+# Production Assistant/Grip (2006)
 
 ## Nike – Commercial
 
@@ -82,17 +58,25 @@ Director: Michael Thelin
 
 ---
 
-# Production Assistant
+# Dolly Grip
 
-## Threads (Khahit errough) – Feature Film (20xx - 20xx)
+## Magnum Insurance – Commercial (2006)
 
-Producer: Don Smith
+DP: Peter Gilbert
+
+---
+
+# Grip
+
+## The Signing – Short Film (2005)
+
+DP: Brian Wells
 
 ---
 
 # Production Assistant
 
-## Boricua – Feature Film (20xx - 20xx)
+## Boricua – Feature Film (2004)
 
 Producer: Sam Sanders
 
@@ -100,6 +84,22 @@ Producer: Sam Sanders
 
 # Boom Operator
 
-## The Appointment – Short Film (20xx - 20xx)
+## The Appointment – Short Film (2004)
 
 Producer/Director: Jose Gomez
+
+---
+
+# Grip
+
+## When Sara Looks Up – Short Film (2004)
+
+DP: Daniel Tkaczyk
+
+---
+
+# Production Assistant
+
+## Threads (Khahit errough) – Feature Film (2003)
+
+Producer: Don Smith

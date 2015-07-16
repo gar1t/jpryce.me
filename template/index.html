@@ -104,6 +104,14 @@
                     <td class="title">Website</td>
                     <td><a href="http://{{personal.website}}">{{personal.website}}</a></td>
                   </tr>
+                  <tr>
+                    <td class="title">IMDB</td>
+                    <td><a href="http://www.imdb.com/name/{{personal.imdb}}">imdb.com/name/{{personal.imdb}}</a></td>
+                  </tr>
+                  <tr>
+                    <td class="title">Facebook</td>
+                    <td><a href="https://www.facebook.com/{{personal.facebook}}">facebook.com/{{personal.facebook}}</a></td>
+                  </tr>
                 </table>
               </div>
             </div>
@@ -125,6 +133,11 @@
                 </div>
               </div>
               <div class="bottom">
+                <ul class="filters">
+                  {% for tag in tags.portfolio %}
+                  <li class="{{tag.class}} active">{{tag.name}}</li>
+                  {% endfor %}
+                </ul>
                 <ul class="gallery da-thumbs" id="da-thumbs">
                   {% for item in portfolio %}
                   <li class="{{item.tags}}">
@@ -195,7 +208,7 @@
                 </div>
               </div>
             </div>
-            <div class="bb-custom-side pagearea contact">
+            <div class="bb-custom-side pagearea contact profile">
               <div class="top color-text">
                 <p>Contact</p>
                 <div class="socials">
@@ -203,14 +216,31 @@
                 </div>
               </div>
               <div class="bottom">
-                <p>
-                  <strong>Address: </strong>{{personal.address}}<br>
-                  <strong>Phone: </strong>{{personal.phone}}<br>
-                  <strong>Email: </strong><a href="mailto:{{personal.email}}">{{personal.email}}</a><br>
-                  <strong>Site: </strong><a href="http://{{personal.website}}">{{personal.website}}</a><br>
-                </p>
-                <p class="title">Call me!</p>
+                <table>
+                  <tr>
+                    <td class="title">Address</td>
+                    <td>{{personal.address}}</td>
+                  </tr>
+                  <tr>
+                    <td class="title">Country</td>
+                    <td>{{personal.country}}</td>
+                  </tr>
+                  <tr>
+                    <td class="title">Phone</td>
+                    <td>{{personal.phone}}</td>
+                  </tr>
+                  <tr>
+                    <td class="title">Email</td>
+                    <td><a href="mailto:{{personal.email}}">{{personal.email}}</a></td>
+                  </tr>
+                  <tr>
+                    <td class="title">Website</td>
+                    <td><a href="http://{{personal.website}}">{{personal.website}}</a></td>
+                  </tr>
+                </table>
+                <p class="title" style="font-weight:normal;font-size:17px">Call me!</p>
               </div>
+              <div style="position:relative;top:-20px">Photos by <a href="http://www.jsrphotos.com">JSR Photos</a></div>
             </div>
           </div>
         </div>

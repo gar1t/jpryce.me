@@ -14,6 +14,9 @@ html,body{
 body{
     background: url('../images/bg/bg788.png');
 }
+a {
+    color: #777;
+}
 .right{
     float: right;
 }
@@ -175,7 +178,6 @@ body{
     vertical-align: top;
 }
 .workspace>.content .pagearea.contact>div.bottom table{
-    margin-top: -10px;
 }
 .workspace>.content .pagearea.contact>div.bottom table tr td input[type='text'],
 .workspace>.content .pagearea.contact>div.bottom table tr td textarea{
