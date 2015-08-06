@@ -1,5 +1,5 @@
 Name: Justin Pryce
-Title: Obsession With Awesome
+Title:
 Age: 40
 Address: Los Angeles, CA
 Country: USA

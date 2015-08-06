@@ -28,14 +28,6 @@ DP: Quyen Tran
 
 # Grip
 
-## Fox Sports Saturday Baseball – MLB Productions (20xx - 20xx)
-
-Gaffer: Tom Scott
-
----
-
-# Grip
-
 ## City Doctor – Short Film (2007)
 
 DP: Brian Wells
@@ -79,6 +71,14 @@ DP: Brian Wells
 ## Boricua – Feature Film (2004)
 
 Producer: Sam Sanders
+
+---
+
+# Grip
+
+## Fox Sports Saturday Baseball – MLB Productions (2004)
+
+Gaffer: Tom Scott
 
 ---
 
